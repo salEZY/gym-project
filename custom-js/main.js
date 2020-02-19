@@ -36,7 +36,7 @@ for (var i = 0; i < menues.length; i++) {
 	element += `<li class='${active}'><a href="${menu.path}">${menu.name}</a></li>`;
 }
 element += "</ul>";
-$("#menu").html(element);
+$(".js-menu").html(element);
                     //     <li class="active"><a href="./index.html">Home</a></li>
                     //     <li><a href="./about-us.html">About</a></li>
                     //     <li><a href="./classes.html">Classes</a></li>
