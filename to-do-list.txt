@@ -1,0 +1,17 @@
+
+
+1. Napraviti dinamicki meni => in progress (treba dinamicki meni da sorujemo u local storage ili u fajl.)
+2. Napraviti dinamicko prikazivanje svih postova
+3. Napraviti stranicu za registraciju i logovanje 
+(prilikom klika na dugme za regisraciju, treba da se prodje kroz sva polja i da se ta polja validiraju, ukoliko nisu validna, ispisati gresku za svako polje.)
+4. Napraviti logiku za registraciju i logovanje memebera (odnosno, storovati member u local storage a prilikom logovanja praviti session storage)
+5. Filtriranje i pretraga postova na sajtu. (moguce je to implementirati i u galeriji)
+6. Odraditi neki AJAX. (mozemo i iz fajla da izvucemo neke podatke).
+7. Napraviti admin - panel => to na kraju.
+
+Domaci:
+
+1. Importovati u sve html fajlove main.js fajl.
+2. Srediti google fonts, zakomentarisati ili obrisati.
+3. Ispisati meni u futeru.
+4. Napravii stranicu za BMI u skladu sa temom, napraviti neka input polja za unos visine i tezine i pola. (Obavezno potsetiti da se to prikazuje samo ulogovanim korisnicima).
