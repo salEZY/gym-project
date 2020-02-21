@@ -22,6 +22,10 @@ var menues = [
 	{
 		"name" : "Contacts",
 		"path" : "./contact.html?page=Contacts"
+	},
+	{
+		"name" : "BMI",
+		"path" : "./bmi.html?page=BMI"
 	}
 ];
 
