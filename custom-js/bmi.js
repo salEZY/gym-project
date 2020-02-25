@@ -7,12 +7,28 @@ const bmi = () => {
   let selectedValue = selectGender.options[selectGender.selectedIndex].value
   let weight = document.querySelector('#weight').value
   let height = document.querySelector('#height').value
-  console.log(weight+" and "+height);
-  
 
   if (weight !== null && height !== null) {
     let res = (weight / (height * height)) * 10000
-    $('.result').html(`Gender: ${selectedValue}, BMI: ${res.toFixed(2)}`)
+    $('.result').html(`Gender: ${selectedValue}, BMI: ${res.toFixed(1)} which makes you: `+typeOfBMI(res))
+  }
+}
+
+const typeOfBMI = (bmi) => {
+  if (bmi > 35.0) {
+    return 'Extremely Obese'
+  }
+  if (bmi > 30.0 && bmi < 34.9) {
+    return 'Obese'
+  }
+  if (bmi > 25.0 && bmi < 29.9) {
+    return 'Overweight'
+  }
+  if (bmi >18.5 && bmi < 24.9) {
+    return 'Normal'
+  }
+  if (bmi < 18.5) {
+    return 'Underweight'
   }
 }
 
