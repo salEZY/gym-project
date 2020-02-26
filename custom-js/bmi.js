@@ -1,6 +1,7 @@
 let calculateBtn = document.querySelector('.calculateBmi')
 
-const bmi = () => {
+const bmi = (e) => {
+  e.preventDefault()
   let selectGender = document.querySelector('#gender')
   let selectedValue = selectGender.options[selectGender.selectedIndex].value
   let weight = document.querySelector('#weight').value
