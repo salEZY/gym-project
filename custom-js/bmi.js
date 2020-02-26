@@ -1,6 +1,4 @@
-
 let calculateBtn = document.querySelector('.calculateBmi')
-
 
 const bmi = () => {
   let selectGender = document.querySelector('#gender')
@@ -10,7 +8,7 @@ const bmi = () => {
 
   if (weight !== null && height !== null) {
     let res = (weight / (height * height)) * 10000
-    $('.result').html(`Gender: ${selectedValue}, BMI: ${res.toFixed(1)} which makes you: `+typeOfBMI(res))
+    $('.result').html(`Gender: ${selectedValue}, Your Body Mass Index is ${res.toFixed(1)} which makes you: `+typeOfBMI(res))
   }
 }
 

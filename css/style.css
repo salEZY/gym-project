@@ -1633,6 +1633,16 @@ ul, ol {
 	border: none;
 	text-transform: uppercase;
 }
+.bmi {
+	min-height: 500px;
+	padding-bottom: 10px;
+}
+.bmi-header {
+	margin-bottom: 20px;
+}
+.bmi-section {
+	padding-top: 100px;
+}
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1200px) {
