@@ -1646,6 +1646,10 @@ ul, ol {
 .select-div {
 	margin: 0 auto;
 }
+.bmi .register-form input{
+	height: 31px;
+	border: .5px solid #f67831;
+}
 /*-------------------------------- Responsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1200px) {

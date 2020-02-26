@@ -9,9 +9,9 @@ const bmi = (e) => {
 
   if (weight && height && selectedValue) {
     let res = (weight / (height * height)) * 10000
-    $('.result').html(`Gender: ${selectedValue}, Your Body Mass Index is ${res.toFixed(1)} which makes you: `+typeOfBMI(res))   
+    $('.result').html(`Your BMI is ${res.toFixed(1)} which makes you: `+typeOfBMI(res))   
   }else{
-    $('.result').html('Please fill the required fields and/or choose your gender!')
+    $('.result').html('Please fill the required fields!')
   }
 }
 
