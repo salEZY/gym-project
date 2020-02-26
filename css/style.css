@@ -1643,6 +1643,9 @@ ul, ol {
 .bmi-section {
 	padding-top: 100px;
 }
+.select-div {
+	margin: 0 auto;
+}
 /*-------------------------------- Responsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1200px) {
