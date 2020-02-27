@@ -1650,6 +1650,20 @@ ul, ol {
 	height: 31px;
 	border: .5px solid #f67831;
 }
+.footer-nav .js-menu {
+	overflow: hidden;
+	max-height: 120px;
+	font-size: 11px;
+	margin-top: 43px;
+}
+.footer-nav .js-menu ul li a {
+	color: white;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+.footer-nav .js-menu ul li a:hover {
+	color: #f67831;
+}
 /*-------------------------------- Responsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1200px) {
