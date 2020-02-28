@@ -9,26 +9,26 @@ const bmi = (e) => {
 
   if (weight && height && selectedValue) {
     let res = (weight / (height * height)) * 10000
-    $('.result').html(`Your BMI is ${res.toFixed(1)} which makes you: `+typeOfBMI(res))   
+    $('.result').html(`Your BMI is ${res.toFixed(2)} which makes you: `+typeOfBMI(res))   
   }else{
     $('.result').html('Please fill the required fields!')
   }
 }
 
 const typeOfBMI = (bmi) => {
-  if (bmi > 35.0) {
+  if (bmi >= 35.00) {
     return 'Extremely Obese'
   }
-  if (bmi > 30.0 && bmi < 34.9) {
+  if (bmi >= 30.00 && bmi <= 34.99) {
     return 'Obese'
   }
-  if (bmi > 25.0 && bmi < 29.9) {
+  if (bmi >= 25.00 && bmi <= 29.99) {
     return 'Overweight'
   }
-  if (bmi >18.5 && bmi < 24.9) {
+  if (bmi >= 18.50 && bmi <= 24.99) {
     return 'Normal'
   }
-  if (bmi < 18.5) {
+  if (bmi < 18.50) {
     return 'Underweight'
   }
 }
