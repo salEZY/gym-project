@@ -1658,8 +1658,9 @@ ul, ol {
 }
 .footer-nav .js-menu ul li a {
 	color: white;
-	font-weight: bold;
-	letter-spacing: 3px;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	text-transform: uppercase;
 }
 .footer-nav .js-menu ul li a:hover {
 	color: #f67831;

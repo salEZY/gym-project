@@ -1,4 +1,4 @@
-var menues = [
+let menues = [
 	{
 		"name" : "Home",
 		"path" : "./index.html?page=Home"
