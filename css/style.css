@@ -1652,7 +1652,7 @@ ul, ol {
 }
 .footer-nav .js-menu {
 	overflow: hidden;
-	max-height: 120px;
+	height: 120px;
 	font-size: 11px;
 	margin-top: 43px;
 }
@@ -1675,6 +1675,20 @@ ul, ol {
 /* Medium Device: 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.footer-nav {
+		text-align: left;
+	}
+	.footer-nav .js-menu {
+		height: 240px;
+	}
+	.footer-nav .js-menu ul {
+		height: 240px;
+		display: flex;
+		flex-direction: column;
+	}
+	.footer-nav .js-menu ul li {
+		margin-bottom: 20px;
+	}
 	.services-item {
 		padding-top: 70px;
 		padding-left: 37px;
@@ -1726,6 +1740,9 @@ ul, ol {
 	}
 }
 @media only screen and (max-width: 991px) {
+	.footer-nav {
+		text-align: center;
+	}
 	.testimonial-section:after {
 		display: none;
 	}
@@ -1774,6 +1791,9 @@ ul, ol {
 /* Tablet Device: 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.footer-nav {
+		text-align: center;
+	}
 	.nav-menu .mainmenu ul li {
 		margin-right: 12px;
 	}
@@ -1801,6 +1821,9 @@ ul, ol {
 /* Large Mobile: 480px */
 
 @media only screen and (max-width: 767px) {
+	.footer-nav {
+		text-align: center;
+	}
 	.slicknav_menu {
 		display: block;
 		background: transparent;
@@ -1908,6 +1931,9 @@ ul, ol {
 /* Small Mobile: 320px */
 
 @media only screen and (max-width: 479px) {
+	.footer-nav {
+		text-align: center;
+	}
 	.hero-text h1 {
 		font-size: 42px;
 	}
