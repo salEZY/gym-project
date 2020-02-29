@@ -26,7 +26,7 @@ const typeOfBMI = (bmi) => {
     return 'Overweight'
   }
   if (bmi >= 18.50 && bmi <= 24.99) {
-    return 'Normal'
+    return 'Healthy'
   }
   if (bmi < 18.50) {
     return 'Underweight'
