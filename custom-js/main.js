@@ -41,3 +41,4 @@ for (let i = 0; i < menues.length; i++) {
 }
 element += "</ul>";
 $(".js-menu").html(element);
+document.title += ` ${page}`
