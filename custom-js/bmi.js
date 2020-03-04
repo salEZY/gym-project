@@ -9,7 +9,7 @@ const bmi = (e) => {
 
   if (weight && height && selectedValue) {
     let res = (weight / (height * height)) * 10000
-    $('.result').html(`Your BMI is ${res.toFixed(2)} which makes you: `+typeOfBMI(res))   
+    $('.result').html(`Your BMI: ${res.toFixed(2)} which makes you: `+typeOfBMI(res))   
   }else{
     $('.result').html('Please fill the required fields!')
   }

@@ -1634,7 +1634,7 @@ ul, ol {
 	text-transform: uppercase;
 }
 .bmi {
-	min-height: 500px;
+	min-height: 502px;
 	padding-bottom: 10px;
 }
 .bmi-header {
@@ -1643,12 +1643,13 @@ ul, ol {
 .bmi-section {
 	padding-top: 100px;
 }
-.select-div {
-	margin: 0 auto;
-}
 .bmi .register-form input{
 	height: 31px;
 	border: .5px solid #f67831;
+}
+.select-div {
+	text-align: center;
+	margin: 0 auto;
 }
 .footer-nav .js-menu {
 	overflow: hidden;
@@ -1675,6 +1676,15 @@ ul, ol {
 /* Medium Device: 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.calc {
+		height: 570px;
+	}
+	.calc .bmi {
+		height: 570px;
+	}
+	.bmi img {
+		height: 570px;
+	}
 	.footer-nav {
 		text-align: left;
 	}
