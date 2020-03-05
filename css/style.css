@@ -1633,9 +1633,11 @@ ul, ol {
 	border: none;
 	text-transform: uppercase;
 }
+/*---------------------
+  BMI Section
+-----------------------*/
 .bmi {
-	min-height: 502px;
-	padding-bottom: 10px;
+	min-height: 551px;
 }
 .bmi-header {
 	margin-bottom: 20px;
@@ -1666,6 +1668,45 @@ ul, ol {
 .footer-nav .js-menu ul li a:hover {
 	color: #f67831;
 }
+.bmi img {
+	height: 551px;
+}
+.bmi-section .container {
+	box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.15);
+	padding: 0;
+}
+.result {
+	margin-top: 0;
+}
+/*---------------------
+  Blog filter Section
+-----------------------*/
+.filtering {
+	margin: 0 auto;
+	width: 1135px;
+	box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.15);
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.filtering select, .filtering input {
+	width: 25%;
+	margin-top: 12px;
+	border: .5px solid #f67831;
+}
+.filtering label {
+	margin-bottom: 0;
+	padding-top: 15px;
+}
+.filtering button {
+	background-color: #f67831;
+	border: 0;
+	margin-top: 10px;
+}
+.filtering button:hover {
+	background-color: #ac5422;
+}
 /*-------------------------------- Responsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1200px) {
@@ -1676,6 +1717,9 @@ ul, ol {
 /* Medium Device: 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.filtering{
+		width: 920px;
+	}
 	.calc {
 		height: 570px;
 	}
@@ -1750,6 +1794,12 @@ ul, ol {
 	}
 }
 @media only screen and (max-width: 991px) {
+	.filtering{
+		width: 100%;
+	}
+	.bmi-section .container {
+		box-shadow: none;
+	}
 	.footer-nav {
 		text-align: center;
 	}
