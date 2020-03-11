@@ -79,7 +79,13 @@ $('#list-posts').html(postsTemplate);
 
 function filterPosts() {
 	let selectTag = "#" + $('#posts').find(":selected").text();
-	
+	console.log(selectTag)
+	if (selectTag === '#All') {
+		$("#list-posts").empty()
+		displayPosts(posts)
+		return
+	}
+
 	var selectedPosts = [];
 
 	for (var i = 0; i < posts.length; i++) {
@@ -118,6 +124,9 @@ function displayPosts(filteredPosts) {
 
 const searchByName = () => {
 	let name = document.querySelector('#name').value.toLowerCase()
+	if (name.length < 3) {
+		return
+	}
 
 	var postsByName = [];
 
