@@ -1692,7 +1692,7 @@ ul, ol {
 }
 .filtering select, .filtering input {
 	width: 25%;
-	margin-top: 12px;
+	margin-top: 13px;
 	border: .5px solid #f67831;
 }
 .filtering label {
@@ -1701,11 +1701,12 @@ ul, ol {
 }
 .filtering button {
 	background-color: #f67831;
-	border: 0;
+	border: 1px solid #f67831 !important;
 	margin-top: 10px;
 }
 .filtering button:hover {
-	background-color: #ac5422;
+	background-color: white;
+	color: #f67831;
 }
 /*-------------------------------- Responsive Media Styles --------------------------------*/
 

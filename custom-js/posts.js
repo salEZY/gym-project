@@ -55,6 +55,7 @@ let posts = [
 	},
 ];
 
+let searchBtn = document.querySelector("#searchBtn")
 var postsTemplate = "";
 
 for (var i = 0; i < posts.length; i++) {
@@ -78,11 +79,7 @@ $('#list-posts').html(postsTemplate);
 
 function filterPosts() {
 	let selectTag = "#" + $('#posts').find(":selected").text();
-	console.log(selectTag)
 	
-	if (selectTag.includes("--Select--")) {
-		$('#list-posts').html(postsTemplate);
-	}
 	var selectedPosts = [];
 
 	for (var i = 0; i < posts.length; i++) {
@@ -119,5 +116,20 @@ function displayPosts(filteredPosts) {
 	$('#list-posts').html(postsTemplate);
 }
 
+const searchByName = () => {
+	let name = document.querySelector('#name').value.toLowerCase()
 
+	var postsByName = [];
 
+	for (var i = 0; i < posts.length; i++) {
+		var post = posts[i];
+		if (name.substring(0, 3) === post.title.substring(0, 3).toLowerCase()) {
+			postsByName.push(post);
+		}
+	}
+
+	$("#list-posts").empty();
+	displayPosts(postsByName)
+}
+
+searchBtn.addEventListener('click', searchByName)
