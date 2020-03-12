@@ -78,8 +78,8 @@ $('#list-posts').html(postsTemplate);
 
 
 function filterPosts() {
-	let selectTag = "#" + $('#posts').find(":selected").text();
-	if (selectTag === '#--Select--') {
+	let selectTag = $('#posts').find(":selected").text();
+	if (selectTag === '--Select--') {
 		$("#list-posts").empty()
 		displayPosts(posts)
 		return
