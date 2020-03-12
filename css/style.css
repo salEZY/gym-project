@@ -1681,10 +1681,14 @@ ul, ol {
 /*---------------------
   Blog filter Section
 -----------------------*/
+.spad {
+	padding-top: 50px;
+}
 .filtering {
 	margin: 0 auto;
 	width: 1135px;
 	box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
 	margin-bottom: 50px;
 	display: flex;
 	flex-direction: row;
@@ -1883,6 +1887,20 @@ ul, ol {
 /* Large Mobile: 480px */
 
 @media only screen and (max-width: 767px) {
+	.filtering {
+		flex-direction: column;
+	}
+	.filtering label {
+		text-align: center;
+	}
+	.filtering select, .filtering input {
+		width: 40%;
+		margin: 0 auto;
+	}
+	.filtering button {
+		width: 30%;
+		margin: 10px auto;
+	}
 	.footer-nav {
 		text-align: center;
 	}
