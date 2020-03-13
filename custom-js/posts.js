@@ -52,7 +52,7 @@ let posts = [
 		"tag" : "#Gym",
 		"img_path" : "img/blog/blog-9.jpg",
 		"created_at" : "February 17, 2019"
-	},
+	}
 ];
 
 let searchBtn = document.querySelector("#searchBtn")
