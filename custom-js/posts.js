@@ -1,8 +1,11 @@
-let posts = []
-fetch('./data/blog.json')
-	.then(res =>  res.json())
-	.then(data => posts = data)
-console.log(posts)
+async function getPostsFromJson(url) {
+	let response = await fetch(url)
+	let data = await response.json()
+	return data
+}
+
+getPostsFromJson('./data/blog.json')
+	.then(data => console.log(data))
 
 let searchBtn = document.querySelector("#searchBtn")
 var postsTemplate = "";
