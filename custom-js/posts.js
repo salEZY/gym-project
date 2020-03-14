@@ -8,8 +8,7 @@ let posts = getPostsFromJson('./data/blog.json')
 
 let searchBtn = document.querySelector("#searchBtn")
 
-
-window.onload = function () {
+setTimeout(() => {
 	var postsTemplate = "";
 	for (var i = 0; i < posts.length; i++) {
 		var singlePost = posts[i];
@@ -28,9 +27,8 @@ window.onload = function () {
 	}
 	
 	$('#list-posts').html(postsTemplate);
-}
-
-
+}, 2000)
+	
 
 function filterPosts() {
 	let selectTag = $('#posts').find(":selected").text();
