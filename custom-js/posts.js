@@ -1,10 +1,10 @@
-let posts = fetch('./data/blog.json')
+let posts = await fetch('./data/blog.json')
 			.then((res) => {
 				return res.json()
 			})
 			.then((data) => {
 				console.log(data)
-				return data
+				return await data
 			})
 console.log(posts)
 
