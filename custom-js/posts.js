@@ -25,7 +25,6 @@ getPostsFromJson('./data/blog.json')
 	}
 	
 	$('#list-posts').html(postsTemplate);
-	console.log(posts)
 	return posts
 	})
 
