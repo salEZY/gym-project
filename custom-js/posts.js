@@ -4,16 +4,11 @@ async function getPostsFromJson(url) {
 	return data
 }
 
-let posts = getPostsFromJson('./data/blog.json')
-console.log(posts)
-
-let searchBtn = document.querySelector("#searchBtn")
-
-setTimeout(() => {
-	console.log(posts)
-	var postsTemplate = "";
-	for (var i = 0; i < posts.length; i++) {
-		var singlePost = posts[i];
+getPostsFromJson('./data/blog.json')
+	.then((data) => {
+		var postsTemplate = "";
+	for (var i = 0; i < data.length; i++) {
+		var singlePost = data[i];
 		console.log(singlePost)
 		
 		var blogTemplate = '<div class="col-lg-4 col-md-6">';
@@ -30,8 +25,9 @@ setTimeout(() => {
 	}
 	
 	$('#list-posts').html(postsTemplate);
-}, 2000)
-	
+	})
+
+let searchBtn = document.querySelector("#searchBtn")
 
 function filterPosts() {
 	let selectTag = $('#posts').find(":selected").text();
