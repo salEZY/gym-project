@@ -1,39 +1,8 @@
-// let menues = [
-// 	{
-// 		"name" : "Home",
-// 		"path" : "./index.html?page=Home"
-// 	},
-// 		{
-// 		"name" : "About",
-// 		"path" : "./about-us.html?page=About"
-// 	},
-// 	{
-// 		"name" : "Classes",
-// 		"path" : "./classes.html?page=Classes"
-// 	},
-// 	{
-// 		"name" : "Blog",
-// 		"path" : "./blog.html?page=Blog"
-// 	},
-// 	{
-// 		"name" : "Gallery",
-// 		"path" : "./gallery.html?page=Gallery"
-// 	},
-// 	{
-// 		"name" : "Contacts",
-// 		"path" : "./contact.html?page=Contacts"
-// 	},
-// 	{
-// 		"name" : "BMI",
-// 		"path" : "./bmi.html?page=BMI"
-// 	}
-// ];
 fetch('./data/nav.json')
 			.then((res) => {
 				return res.json()
 			})
 			.then((data) => {
-				console.log(data)
 				let url = new URL(window.location.href);	
 				let page = url.searchParams.get('page');
 				(page == null) ? pageName = "Home" : pageName = page;
