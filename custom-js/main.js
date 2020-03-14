@@ -15,7 +15,7 @@ fetch('./data/nav.json')
 				}
 				element += "</ul>";
 				$(".js-menu").html(element);
-				document.title += ` ${page}`
+				document.title += ` ${pageName}`
 			})
 
 

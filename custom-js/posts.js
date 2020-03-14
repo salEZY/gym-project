@@ -1,12 +1,12 @@
-let posts = fetch('./data/blog.json')
+let posts
+fetch('./data/blog.json')
 			.then((res) => {
 				return res.json()
 			})
 			.then((data) => {
-				
-				console.log(data)
-				return data
+				posts = data
 			})
+console.log(posts)
 
 let searchBtn = document.querySelector("#searchBtn")
 var postsTemplate = "";
