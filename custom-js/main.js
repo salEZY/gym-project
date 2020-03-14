@@ -43,13 +43,13 @@ element += "</ul>";
 $(".js-menu").html(element);
 document.title += ` ${page}`
 
-// // Radice kad bude hostovan sajt
-// fetch('./data/nav.json')
-// 			.then((res) => {
-// 				return res.json()
-// 			})
-// 			.then((data) => {
-// 				console.log(data)
-// 			})	
+// Radice kad bude hostovan sajt
+fetch('./data/nav.json')
+			.then((res) => {
+				return res.json()
+			})
+			.then((data) => {
+				console.log(data)
+			})	
 
 
