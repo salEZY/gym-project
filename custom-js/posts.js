@@ -7,25 +7,29 @@ async function getPostsFromJson(url) {
 let posts = getPostsFromJson('./data/blog.json')
 
 let searchBtn = document.querySelector("#searchBtn")
-var postsTemplate = "";
 
-for (var i = 0; i < posts.length; i++) {
-	var singlePost = posts[i];
 
-	var blogTemplate = '<div class="col-lg-4 col-md-6">';
-	blogTemplate += '<div class="single-blog-item">';
-	blogTemplate += `<img src="${singlePost.img_path}" alt="">`;
-	blogTemplate += '<div class="blog-widget">';
-	blogTemplate += `<div class="bw-date">${singlePost.created_at}</div>`;
-	blogTemplate += `<a href="#" class="tag">${singlePost.tag}</a>`;
-	blogTemplate += '</div>';
-	blogTemplate += `<h4><a href="./blog-details.html">${singlePost.title}</a></h4>`;
-	blogTemplate +=  '</div></div></div>';
-
-	postsTemplate += blogTemplate;
+window.onload = function () {
+	var postsTemplate = "";
+	for (var i = 0; i < posts.length; i++) {
+		var singlePost = posts[i];
+	
+		var blogTemplate = '<div class="col-lg-4 col-md-6">';
+		blogTemplate += '<div class="single-blog-item">';
+		blogTemplate += `<img src="${singlePost.img_path}" alt="">`;
+		blogTemplate += '<div class="blog-widget">';
+		blogTemplate += `<div class="bw-date">${singlePost.created_at}</div>`;
+		blogTemplate += `<a href="#" class="tag">${singlePost.tag}</a>`;
+		blogTemplate += '</div>';
+		blogTemplate += `<h4><a href="./blog-details.html">${singlePost.title}</a></h4>`;
+		blogTemplate +=  '</div></div></div>';
+	
+		postsTemplate += blogTemplate;
+	}
+	
+	$('#list-posts').html(postsTemplate);
 }
 
-$('#list-posts').html(postsTemplate);
 
 
 function filterPosts() {
