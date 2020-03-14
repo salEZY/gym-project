@@ -10,7 +10,7 @@ getPostsFromJson('./data/blog.json')
 		var postsTemplate = "";
 	for (var i = 0; i < data.length; i++) {
 		var singlePost = data[i];		
-		
+		posts.push(singlePost)
 		var blogTemplate = '<div class="col-lg-4 col-md-6">';
 		blogTemplate += '<div class="single-blog-item">';
 		blogTemplate += `<img src="${singlePost.img_path}" alt="">`;
@@ -25,7 +25,6 @@ getPostsFromJson('./data/blog.json')
 	}
 	
 	$('#list-posts').html(postsTemplate);
-	posts = data
 	console.log(posts)
 	return posts
 	})
