@@ -1,7 +1,11 @@
 async function getPostsFromJson(url) {
-	let response = await fetch(url)
-	let data = await response.json()
-	return data
+	try {
+		let response = await fetch(url)
+		let data = await response.json()
+		return data
+	} catch (err) {
+		console.error(err)
+	}
 }
 
 let posts = []
