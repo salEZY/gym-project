@@ -5,10 +5,12 @@ async function getPostsFromJson(url) {
 }
 
 let posts = getPostsFromJson('./data/blog.json')
+console.log(posts)
 
 let searchBtn = document.querySelector("#searchBtn")
 
 setTimeout(() => {
+	console.log(posts)
 	var postsTemplate = "";
 	for (var i = 0; i < posts.length; i++) {
 		var singlePost = posts[i];
