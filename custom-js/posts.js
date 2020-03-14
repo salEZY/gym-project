@@ -1,11 +1,5 @@
-let posts = await fetch('./data/blog.json')
-			.then((res) => {
-				return res.json()
-			})
-			.then((data) => {
-				console.log(data)
-				return await data
-			})
+let response = await fetch('./data/blog.json')
+let posts = await response.json()	
 console.log(posts)
 
 let searchBtn = document.querySelector("#searchBtn")
