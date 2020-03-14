@@ -4,8 +4,7 @@ async function getPostsFromJson(url) {
 	return data
 }
 
-getPostsFromJson('./data/blog.json')
-	.then(data => console.log(data))
+let posts = getPostsFromJson('./data/blog.json')
 
 let searchBtn = document.querySelector("#searchBtn")
 var postsTemplate = "";
