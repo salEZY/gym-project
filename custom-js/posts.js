@@ -3,6 +3,7 @@ let posts = fetch('./data/blog.json')
 				return res.json()
 			})
 			.then((data) => {
+				console.log(data)
 				return data
 			})
 console.log(posts)
