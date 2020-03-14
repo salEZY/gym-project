@@ -4,7 +4,7 @@ async function getPostsFromJson(url) {
 	return data
 }
 
-getPostsFromJson('./data/blog.json')
+let posts = getPostsFromJson('./data/blog.json')
 	.then((data) => {
 		var postsTemplate = "";
 	for (var i = 0; i < data.length; i++) {
@@ -25,6 +25,7 @@ getPostsFromJson('./data/blog.json')
 	}
 	
 	$('#list-posts').html(postsTemplate);
+	return data
 	})
 
 let searchBtn = document.querySelector("#searchBtn")
