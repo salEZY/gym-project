@@ -1,4 +1,4 @@
-let posts
+let posts = []
 fetch('./data/blog.json')
 			.then((res) => {
 				return res.json()
