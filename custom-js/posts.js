@@ -14,7 +14,8 @@ setTimeout(() => {
 	var postsTemplate = "";
 	for (var i = 0; i < posts.length; i++) {
 		var singlePost = posts[i];
-	
+		console.log(singlePost)
+		
 		var blogTemplate = '<div class="col-lg-4 col-md-6">';
 		blogTemplate += '<div class="single-blog-item">';
 		blogTemplate += `<img src="${singlePost.img_path}" alt="">`;
