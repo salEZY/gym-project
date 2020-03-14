@@ -1,10 +1,9 @@
-let posts = []
-fetch('./data/blog.json')
+let posts = fetch('./data/blog.json')
 			.then((res) => {
 				return res.json()
 			})
 			.then((data) => {
-				posts = data
+				return data
 			})
 console.log(posts)
 
