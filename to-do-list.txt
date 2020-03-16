@@ -1,17 +1,18 @@
 
 
-1. Napraviti dinamicki meni => in progress (treba dinamicki meni da storujemo u local storage ili u fajl.)
-2. Napraviti dinamicko prikazivanje svih postova => in proress(treba postove da storujemo u local storage ili u fajl.)
+1. Napraviti dinamicki meni =>  (treba dinamicki meni da storujemo u local storage ili u fajl.) DONE
+2. Napraviti dinamicko prikazivanje svih postova => (treba postove da storujemo u local storage ili u fajl.) DONE
 3. Napraviti stranicu za registraciju i logovanje 
 (prilikom klika na dugme za regisraciju, treba da se prodje kroz sva polja i da se ta polja validiraju, ukoliko nisu validna, ispisati gresku za svako polje.)
 4. Napraviti logiku za registraciju i logovanje memebera (odnosno, storovati member u local storage a prilikom logovanja praviti session storage)
-5. Filtriranje i pretraga postova na sajtu. (moguce je to implementirati i u galeriji) - in progress
-6. Odraditi neki AJAX. (mozemo i iz fajla da izvucemo neke podatke).
+5. Filtriranje i pretraga postova na sajtu. (moguce je to implementirati i u galeriji) - DONE
+6. Odraditi neki AJAX. (mozemo i iz fajla da izvucemo neke podatke). DONE
 7. Napraviti admin - panel => to na kraju.
 
 Domaci:
 
-1. Srediti drop-down za filtriranje
-2. Napraviti da svi blogovi imaju broj pregleda(lajkova) -> to kad budes pravio objekte u nizu ili u json fajlu.
-3. Search -> probaj da odradis search, tako sto ces na osnovu makar 3 slova da vratis veci broj rezultata
-4. Sredi html da bude u skladu sa temom, filtriranje neka stoji sa strane.
+1. Upisati u niz members u LocalStorage i json Filtriranje
+2. Validacija pre registracije
+3. RegEx
+4. Ako stignem i logovanje
+
