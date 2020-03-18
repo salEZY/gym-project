@@ -1712,6 +1712,11 @@ ul, ol {
 	background-color: white;
 	color: #f67831;
 }
+.register-div {
+	margin: 0 auto;
+	margin-top: 120px;
+	box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.15);
+}
 /*-------------------------------- Responsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1200px) {
