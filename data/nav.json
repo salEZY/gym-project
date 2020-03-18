@@ -2,7 +2,7 @@
 	{
 		"name" : "Sign Up Today",
 		"slug" : "sign-up-today",
-		"path" : "./classes.html?page=Classes",
+		"path" : "./register.html?page=Register",
 		"class" : "primary-btn signup-btn"
 	},
   {
