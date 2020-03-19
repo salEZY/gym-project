@@ -1683,6 +1683,7 @@ ul, ol {
 -----------------------*/
 .spad {
 	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .filtering {
 	margin: 0 auto;
@@ -2067,8 +2068,11 @@ ul, ol {
 	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 991px) {
+	.footer-nav .js-menu {
+		height: 220px;
+	}
 	.footer-nav .js-menu ul li a {
-		font-size: 11.5px;
+		font-size: 20px;
 	}
 }
