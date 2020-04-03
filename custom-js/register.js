@@ -7,6 +7,9 @@ const validateEmail = (email) => {
 }
 
 const submitForm = (e) => {
+  let allUsers = []
+  let counter = localStorage.getItem('counter');
+  counter++;
   e.preventDefault()
   let firstName = $('#name').val()
   let lastName = $('#last-name').val()
@@ -23,15 +26,16 @@ const submitForm = (e) => {
     result.textContent = 'Niste uneli validan mail!'
     return
   }
-  // Validacija phone i email unique
-  if (condition) {
+  // // Validacija phone i email unique
+  // if (condition) {
     
-  }
+  // }
 
-  member = new Member(firstName, lastName, email, mobile)
-  // member2 = new Member(firstName, lastName, email, mobile)
-  localStorage.setItem('users', JSON.stringify(member))
-  let users = JSON.parse(localStorage.getItem('users'))
+  const member = new Member(firstName, lastName, email, mobile)
+  allUsers.push(member)
+  localStorage.setItem(`user: ${counter}`, JSON.stringify(allUsers))
+  localStorage.setItem('counter', counter);
   console.log(users)
+  
 }
 submit.addEventListener('click', submitForm)
