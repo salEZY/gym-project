@@ -61,25 +61,24 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Register Section Begin -->
-    <section class="register-section classes-page spad" style="padding: 50px 0;">
+    <section class="register-section classes-page spad" style="padding: 50px 0;background-color: rgb(245, 244, 244);">
         <div class="container">
             <div class="classes-page-text">
-                <div class="row">
+                <div class="row" style="min-height: 502px;">
                     <div class="col-lg-8">
-                        <div class="register-text">
+                        <div class="register-text" style="height: 502px;padding: 90px 70px 50px 70px;">
                             <div class="section-title">
                                 <h2>Register Now</h2>
-                                <p>The First 7 Day Trial Is Completely Free With The Teacher</p>
                             </div>
                             <form action="#" class="register-form">
-                                <div class="row">
+                                <div class="row" >
                                     <div class="col-lg-6">
                                         <label for="name">First Name</label>
                                         <input type="text" id="name">
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="email">Your email address</label>
-                                        <input type="text" id="email">
+                                        <input type="text" id="email" placeholder="me@example.com" required>
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="last-name">Last Name</label>
@@ -87,10 +86,12 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="mobile">Mobile No*</label>
-                                        <input type="text" id="mobile">
+                                        <input type="text" id="mobile" >
                                     </div>
+                                    <span id="result" style="margin: 0 auto;"></span>
                                 </div>
                                 <button type="submit" class="register-btn">Get Started</button>
+                                
                             </form>
                         </div>
                     </div>
